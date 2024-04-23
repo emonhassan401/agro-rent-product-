@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --main-color: #205E61;
+    --second-color: #3F979B;
+    --text-color: #323232;
+    --gradient: linear-gradient(#205E61, #3F979B);
+	--light: #E2F6CA;
+}
+
+body {
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: var(--light);
+    color: var(--main-color);
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+.user-info {
+    text-align: center;
+}
+
+.user-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.rental-status {
+    border-left: 2px solid var(--main-color);
+    padding-left: 20px;
+}
+
+.rental-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.rental-item:last-child {
+    border-bottom: none;
+}
+
+.status {
+    padding: 6px 12px;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.completed {
+    background: var(--second-color);
+    color: var(--light);
+}
+
+.pending {
+    background: var(--second-colorr);
+    color: var(--light);
+}
+.btn-details{
+    flex: 1 1 7rem;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 0.5rem;
+    background: #3F979B;
+    color: #E2F6CA;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.btn-details:hover{
+    background: var(--main-color);
+}
